@@ -17,7 +17,7 @@ int main(){
     return 0;
 
 }
-
+//Esta función muestra la matriz
 void Mmatriz(int dim, int matriz[dim][dim]){
     int i,j;
     for (i=0; i<9; i++){
@@ -28,6 +28,7 @@ void Mmatriz(int dim, int matriz[dim][dim]){
     }
 }
 
+// Esta función crea los valores aleatorios del tablero
 void llenarMatriz( int dim, int matriz[dim][dim]){
     int i,j;
     for (i=0; i<dim; i++){
