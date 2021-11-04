@@ -37,3 +37,23 @@ void llenarMatriz( int dim, int matriz[dim][dim]){
         }
     }
 }
+
+
+    char nombreJugador;
+    int numeroTurno;
+    int n = 0; //Numero de Jugadores
+
+    printf("Ingresar Cantidad de Jugadores para el Juego:\n");
+    scanf("%d", &n);
+
+    for(int i = 0; i <= n; i++){
+        printf("Ingresar Nombre del Jugador:\n");
+        scanf("%s" &nombreJugador);
+    }
+
+    printf("Turno\tJugador\n");
+	    for (int i = 0; i < n; i++){
+	    printf("%d\t%d\n",numeroTurno[i].nombreJugador;
+    }
+    return 0;
+}
