@@ -105,6 +105,7 @@ void comprobarParejasSumas(int dim, int matriz[dim][dim], int filas){
     }else filas++;
 }
 
+//Esta función calcula los puntos del jugador 
 void calcularPuntos(int seleccion1, int seleccion2, int puntosJ){
     if (seleccion1==seleccion2){
         puntosJ=puntosJ+1;
