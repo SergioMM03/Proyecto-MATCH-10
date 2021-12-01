@@ -52,7 +52,7 @@ void turnosJugador(int dim, int matriz[dim][dim], int filas, int seleccion1, int
         system("clear");
         Mmatriz(dim,matriz,filas);
         calcularPuntos(seleccion1,seleccion2,puntosJ);
-        //comprobarParejasSumas(dim,matriz,filas);
+        comprobarParejasSumas(dim,matriz,filas);
         turnos++;
         filas++;
     } while (filas=9);
