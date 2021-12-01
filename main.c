@@ -2,11 +2,13 @@
 #include <time.h>
 #include <stdlib.h>
 
-
 void Mmatriz(int dim,int matriz[dim][dim], int filas);
 void llenarMatriz(int dim,int matriz[dim][dim]);
 void tableroPuntos(int puntosJ);
 void turnosJugador(int dim, int matriz[dim][dim], int filas,int seleccion1, int seleccion2, int puntosJ);
+void calcularPuntos(int seleccion1, int seleccion2, int puntosJ);
+void comprobarParejasSumas(int dim, int matriz[dim][dim], int filas);
+
 // Funcion principal
 int main(){
     srand(time(NULL));
@@ -50,11 +52,10 @@ void turnosJugador(int dim, int matriz[dim][dim], int filas, int seleccion1, int
         system("clear");
         Mmatriz(dim,matriz,filas);
         calcularPuntos(seleccion1,seleccion2,puntosJ);
-        tableroPuntos(puntosJ);
-        printf("%d ", puntosJ);
+        //comprobarParejasSumas(dim,matriz,filas);
         turnos++;
         filas++;
-    } while (turnos <=3);
+    } while (filas=9);
     
 }
 
@@ -94,5 +95,22 @@ void tableroPuntos(int puntosJ){
 
 //Esta funcion verifica si hay parejas o sumas 10 disponibles
 void comprobarParejasSumas(int dim, int matriz[dim][dim], int filas){
-    if (matriz)
+    int i,j;
+    if (matriz[i][j]==matriz[i][j]){
+    
+    }else filas++;
+    
+    if (matriz[i][j]+matriz[i][j]==10){
+    
+    }else filas++;
+}
+
+void calcularPuntos(int seleccion1, int seleccion2, int puntosJ){
+    if (seleccion1==seleccion2){
+        puntosJ=puntosJ+1;
+        tableroPuntos(puntosJ);
+    } else if (seleccion1+seleccion2 ==10){
+        puntosJ=puntosJ+1;
+        tableroPuntos(puntosJ);
+    } else tableroPuntos(puntosJ);
 }
